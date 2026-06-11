@@ -1,26 +1,26 @@
 class Gira < Formula
   desc "Jira-style ticket workflow for GitHub issues and pull requests"
   homepage "https://github.com/StatPan/gira"
-  version "2.2.0"
+  version "2.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/StatPan/gira/releases/download/v2.2.0/gira_v2.2.0_darwin_arm64.tar.gz"
-      sha256 "ade935a48f924bdb2a65f4a30b138227b6aca2bc3d98b23beca1f83a49ce1c73"
+      url "https://github.com/StatPan/gira/releases/download/v2.3.0/gira_v2.3.0_darwin_arm64.tar.gz"
+      sha256 "a80c0b7e8d1775bccd2d29e228c32ae8d99d3cf7a1e24fca36dc351e56835a6a"
     else
-      url "https://github.com/StatPan/gira/releases/download/v2.2.0/gira_v2.2.0_darwin_amd64.tar.gz"
-      sha256 "f3b2e801dfc45ce3548fd21109e8f524fb7dcbaaf0ddd809b2b77420f4a022ed"
+      url "https://github.com/StatPan/gira/releases/download/v2.3.0/gira_v2.3.0_darwin_amd64.tar.gz"
+      sha256 "af90a0931222729ca6cd953ac8451fe763c8311420337ea0bbc5c6bf9a2ca230"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/StatPan/gira/releases/download/v2.2.0/gira_v2.2.0_linux_arm64.tar.gz"
-      sha256 "b4433355506ccc986bbb7a4889889f20f4ff6c2ee8cf4476fd9f3e0f18bfd2a3"
+      url "https://github.com/StatPan/gira/releases/download/v2.3.0/gira_v2.3.0_linux_arm64.tar.gz"
+      sha256 "6e0ed87e113b6f4339121dd39f9509cb6ac8083616d7d4bf04ccca76ef049f99"
     else
-      url "https://github.com/StatPan/gira/releases/download/v2.2.0/gira_v2.2.0_linux_amd64.tar.gz"
-      sha256 "b587dbd3859e139026c386cbfcf4498fc6eff092186056507d4bc26d856ba333"
+      url "https://github.com/StatPan/gira/releases/download/v2.3.0/gira_v2.3.0_linux_amd64.tar.gz"
+      sha256 "d10cda470bc30e06b53636aa3946b5dbcd8684cc2c60acc61502e069b070ab0c"
     end
   end
 
@@ -29,6 +29,6 @@ class Gira < Formula
   end
 
   test do
-    assert_match "v2.2.0", shell_output("#{bin}/gira version")
+    assert_match "v2.3.0", shell_output("#{bin}/gira version")
   end
 end
